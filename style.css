@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(images/bg-header-mobile.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+}
+
+header .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 4em 0 3em;
+    width: 70px;
+}
+main {
+    padding:  0 10px;
+}
+main h2 {
+    font-family: 'Bai Jamjuree', sans-serif;;
+    text-align: center;
+    font-size: 36px;
+}
+
+main p {
+    padding: 10px;
+    font-family: 'Bai Jamjuree', sans-serif;;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(228, 2%, 57%);
+    margin: 0 0 3em;
+}
+
+.ios-mac {
+    display: block;
+    margin: 0 auto;
+}
+
+.download-ios, .download-mac {
+    max-width: 300px;
+    height: 30px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.download-ios {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 3px 3px 3px hsl(171, 66%, 29%);
+}
+
+.download-mac {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 3px 3px 3px hsl(233, 45%, 39%);
+}
+
+.keep {
+    margin: 5em 0 0;
+}
+
+.image-computer {
+    background-image: url(images/image-computer.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 405px;
+}
+.images {
+    display: block;
+    width: 85vw;
+    margin: 3em auto 3em;
+} 
+
+.icons {
+    margin: 7em auto 2em;
+    display: block;
+}
+
+.partners {
+    display: block;
+    margin: 2em auto;
+}
+
+footer {
+ background-color: hsl(0, 0%, 91%);
+}
+
+footer .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 5em 0 1em;
+    width: 15%;
+}
+
+footer ul {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+footer ul li a{
+    margin: 0.5em 0;
+    color: #222;
+    font-family: 'Bai Jamjuree', sans-serif;;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+footer ul li a:hover {
+    color:hsl(171, 66%, 44%)
+}
+
+footer .sm {
+    display: flex;
+    padding: 0 25%;
+}
+
+footer .sm img {
+    display: block;
+    margin: 20px;
+}
+
+footer .sm img:hover {
+    color:hsl(171, 66%, 44%)
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    .ios-mac {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "download-ios download-mac";
+        max-width: 500px;
+        padding: 0 20px;
+    }
+
+    main p {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .keep-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1.5em auto;
+        max-width: 900px;
+    }
+
+    .image-computer {
+        margin: 1em 0;
+        background-image: url(images/image-computer.png);
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 405px;
+    }
+    
+    .quick-search {
+        width: 350px;
+        padding-left: 50px;
+        height: 100px;
+    }
+
+    .quick-search h2 {
+        text-align: left;
+        margin-top: 1em;
+    }
+
+    .quick-search p {
+        text-align: left;
+    }
+
+    .images {
+        max-width: 900px;
+    }
+
+    .the-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1.5em auto;
+    }
+
+    .partner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 8em 2em;
+    }
+
+    footer {
+        margin-top: 5em;
+        height: 120px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    footer .logo {
+        display: block;
+        margin: 30px 100px;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    footer ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        padding: 0;
+        text-align: left;
+        width: 250px;
+        height: 60px;
+        margin: 30px;
+
+    }
+
+    footer ul li {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    footer ul li a {
+        color: #222;
+        font-family: 'Bai Jamjuree', sans-serif;;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        
+    }  
+
+    footer .sm {
+        height: 60px;
+        margin: 30px;
+    }
+
+}
